@@ -3,7 +3,7 @@ import {
   Button, Form, FormGroup, Input
 } from 'reactstrap';
 import { useJson } from '../helpers/hooks';
-
+import './App.scss';
 /*
  Before React in Vanilla Javascript
 const data = [{name: "Tensae"}, {name: "Trinity"}]
