@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Button, Form
+  Button, Form,
 } from 'react-bootstrap';
 import { useJson } from '../utils/hooks';
 
@@ -78,7 +78,7 @@ const App = () => {
           <Form.Control type="text" name="name" placeholder="Any pokemon name..." onChange={handleChange} value={userInput} />
         </Form.Group>
         <Button>Submit</Button>
-      </Form> 
+      </Form>
       {submitValue && <Data pokemonChar={submitValue} />}
     </div>
   );
