@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {
-  Button, Form, FormGroup, Input
-} from 'reactstrap';
-import { useJson } from '../helpers/hooks';
-import './App.scss';
+  Button, Form,
+} from 'react-bootstrap';
+import { useJson } from '../utils/hooks';
+
 /*
  Before React in Vanilla Javascript
 const data = [{name: "Tensae"}, {name: "Trinity"}]
@@ -74,9 +74,9 @@ const App = () => {
     <div className="App">
       <p>Pokedex</p>
       <Form className="form" onSubmit={handleSubmit}>
-        <FormGroup>
-          <Input type="text" name="name" placeholder="Any pokemon name..." onChange={handleChange} value={userInput} />
-        </FormGroup>
+        <Form.Group>
+          <Form.Control type="text" name="name" placeholder="Any pokemon name..." onChange={handleChange} value={userInput} />
+        </Form.Group>
         <Button>Submit</Button>
       </Form>
       {submitValue && <Data pokemonChar={submitValue} />}
